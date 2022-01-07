@@ -14,7 +14,7 @@
 
 <style>
     body {
-        background-color: #f3f3f3;
+        background-color: coral;
     }
 
     .parent {
@@ -81,8 +81,8 @@
         document.querySelector('.box').innerHTML = loader;
 
         // fetch('https://private-cors-server.herokuapp.com/https://personal-music-api.herokuapp.com/albums')
-        // fetch('https://personal-music-api.herokuapp.com/albums')
-        fetch('https://cors-anywhere.herokuapp.com/https://personal-music-api.herokuapp.com/albums')
+        fetch('https://personal-music-api.herokuapp.com/albums')
+            // fetch('https://cors-anywhere.herokuapp.com/https://personal-music-api.herokuapp.com/albums')
             .then((res) => res.json())
             .then(function (data) {
                 let episodes = data.results;
